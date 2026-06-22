@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="full stack, tarouq a7med, web, learning, .....">
+        <meta name="description" content="website for learning with Tarouq">
+        <meta name="author" content="tarouq a7med">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <!--    h1 - h6    -->
+        <h1>Hello World - اكبر خط</h1>
+        <h2>Hello World</h2>
+        <h3>Hello World</h3>
+        <h4>Hello World</h4>
+        <h5>Hello World</h5>
+        <h6>Hello World - اصغر خط</h6>
+
+        <hr>
+
+        <!-- paragraph -->
+        <p>This is a simple paragraph.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam dolores alias quidem doloremque laborum neque quasi cumque natus iusto ut placeat deserunt ipsam hic saepe sequi enim eum, modi ducimus.</p>
+
+        <hr><br><br>
+
+        <!-- anchor -->
+        <a href="https://www.google.com" target="_blank">Visit Google (_blank) - بتفتح فف صفحة فاضية</a>
+        <br>
+        <a href="https://www.google.com" target="_self">Visit Google (_self) - بتفتح ف نفس الصفحة</a>
+        <br>
+        <a href="https://www.google.com" target="_top">Visit Google (_top) - بتفتح اللينك ف الصفحة الرئيسية الكبيرة الاصلية وبتكسر كل الiframes الموجودة</a>
+        <br>
+        <a href="https://www.google.com" target="_parent">Visit Google (_parent) - بتفتح اللينك ف الiframe الاكبر من الiframe الاصغر منها ف حالة وجود اتنين iframe داخل بعض</a>
+        <br><br><br>
+
+        <hr>
+
+        <br><br>
+        <!-- image -->
+        <p>صورة بدون تحديد طول او عرض</p>
+        <img src="https://picsum.photos/200/300" alt="random image">
+        <br>
+        <p>صورة مع تحديد الطول والعرض (لكن كتابة الطول او العرض مرة اخرى بارقام مختلفة بيخلي المتصفح ياخد اول قيمة مدرجة ويكنسل الباقي)</p>
+        <img src="https://picsum.photos/200/300" alt="random image" width="200px" width="400px" height="300px" height="500px">
+        <br>
+        <p>معمول ليها title بحيث لما تعمل hover بالماوس ع الصورة يظهرلك كلام بيشرح معنى الصورة</p>
+        <img src="https://picsum.photos/200/300" alt="random image" width="200px" height="300px" title="random image">
+
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+
+        <!-- tables -->
+
+        <table border="2" width="100%" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>University</th>
+                    <th>College</th>
+                    <th>Number of students</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="2">Capital</th>
+                    <td>CS & AI</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td>Engineering</td>
+                    <td>800</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Cairo</th>
+                    <td>CS & AI</td>
+                    <td>700</td>
+                </tr>
+                <tr>
+                    <td>Engineering</td>
+                    <td>450</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Sohag</th>
+                    <td>CS & AI</td>
+                    <td>900</td>
+                </tr>
+                <tr>
+                    <td>Engineering</td>
+                    <td>500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="2">total students :</th>
+                    <td>4550</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <!-- lists -->
+
+        <p>- some universities in Egypt : (in unordered list)</p>
+        <ul>
+            <li>Capital</li>
+            <li>Cairo</li>
+            <li>Sohag</li>
+        </ul>
+
+        <p>- some universities in Egypt : (in ordered list, type="i")</p>
+        <ol type="I">
+            <li>Capital</li>
+            <li>Cairo</li>
+            <li>Sohag</li>
+        </ol>
+
+        <hr>
+
+        <br><br>
+
+        <iframe src="https://drive.google.com/file/d/1mMQk_BR_8tjidQyMYUDqjytLFRjqttx0/view?usp=sharing" frameborder="2" width="80%" height="500px"></iframe>
+
+        <br>
+        <hr><br>
+
+        <p>form with get method (data appear in search bar)</p>
+        <form action="" method="get">
+            <label for="email">Email :</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <br>
+            <label for="password">Password :</label>
+            <br>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <br>
+            <button type="submit">Login</button>
+        </form>
+
+        <p>same form with post method (data sent in request body, data don't appear in search bar)</p>
+        <form action="" method="post">
+            <label for="email">Email :</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <br>
+            <label for="password">Password :</label>
+            <br>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <br>
+            <button type="submit">Login</button>
+        </form>
+
+
+    </body> 
+</html>
