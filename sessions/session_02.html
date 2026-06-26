@@ -3,9 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Session_02</title>
+    <link rel="stylesheet" href="./CSS/session_02.css">
 </head>
 <body>
+    <h1 style="
+                        margin: 35px;
+                        padding: 20px;
+                        background-image: linear-gradient(135deg, rgb(249, 207, 207), rgba(0, 0, 255, 0.25), #00000000, rgba(0, 0, 255, 0.25), rgb(249, 207, 207));
+                        font-family: cursive;
+                        font-size: 45px;
+                        color: brown;
+                        text-align: center;
+                        text-shadow: 0 0 20px brown;
+                    ">Session_02</h1>
+
+
+    <h2 style="direction: rtl;">كل انواع الinputs :</h2>
+    <h3 dir="rtl">جميع الforms لمستخدمة نوعها method="get"</h3>
+    <br><br>
+    <input dir="rtl" type="button" id="btn" value="Click Me (مشابه لزرار button نوعه submit)">
+    <br><br>
+
+
+    <form action="" method="get">
+        <p dir="rtl">اختيار متعدد:</p>
+        <input type="checkbox" name="choose" id="option1" value="1">
+        <label for="option1">1</label>
+        <br>
+        <input type="checkbox" name="choose" id="option2" value="2">
+        <label for="option2">2</label>
+        <br>
+        <input type="checkbox" name="choose" id="option3" value="3">
+        <label for="option3">3</label>
+        <br>
+        <input type="checkbox" name="choose" id="option4" value="4">
+        <label for="option4">4</label>
+        <br>
+        <input type="checkbox" name="choose" id="option5" value="5">
+        <label for="option5">5</label>
+
+        <br><br>
+        <input type="submit" value="Submit">
+        <br>
+    </form>
+
+
+    <br><br>
+
+
+    <form action="" method="get" style="background: #ff000020; padding: 20px;">
+        <label for="color">Choose a color</label>
+        <br><br>
+        <input type="color" name="color" id="color">
+        <br><br>
+        <input type="submit" value="Submit color">
+    </form>
+
+
+    <br><br>
+
+
+    <form action="" method="get">
+        <label for="date">enter date : </label>
+        <br><br>
+        <input type="date" name="date" id="date">
+        <br><br>
+        <button type="submit">Submit Date</button>
+    </form>
+
+
+    <br><br>
+
+    <form action="" method="get" style="background: #ff000020; padding: 20px;">
+        <h3>With <i><b>autocomplete</b></i></h3>
+        <label for="email1">enter email : </label>
+        <br><br>
+        <input type="email" name="email1" id="email1" autocomplete="on" required>
+        <br><br>
+        <label for="password1">enter password : </label>
+        <br><br>
+        <input type="password" name="password1" id="password1" autocomplete="on" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br><br>
+
+    <form action="" method="get;">
+        <h3>Without <i><b>autocomplete</b></i></h3>
+        <label for="email2">enter email : </label>
+        <br><br>
+        <input type="email" name="email2" id="email2" autocomplete="off" required>
+        <br><br>
+        <label for="password2">enter password : </label>
+        <br><br>
+        <input type="password" name="password2" id="password2" autocomplete="off" required>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <br><br>
+
+    <form action="" method="get" style="background: #ff000020; padding: 20px;">
+        <label for="file">Choose a file</label>
+        <br><br>
+        <input type="file" name="file" id="file">
+        <br><br>
+        <input type="submit" value="Submit file">
+    </form>
+
+
+    <br><br>
+
+
+    <form action="" method="get">
+        <label for="number">enter number : </label>
+        <br><br>
+        <input type="number" name="number" id="number" min="10" max="1000" step="5" placeholder="start from 10 with step 5">
+        <br><br>
+        <label for="text">enter text : </label>
+        <br><br>
+        <input type="text" name="text" id="text" minlength="20" maxlength="100" placeholder="Enter your text">
+        <br><br>
+        <button type="submit">Submit text</button>
+
+    </form>
+
+
+    <br><br>
+
+    <form action="" method="get" style="background: #ff000020; padding: 20px;">
+        <h2>choose one option :</h2>
+        <h4 dir="rtl">لازم الكل ياخد نفس النيم عشان نمنع اختيار اجابتين مع بعض ولازم نعطي الاجابة قيمة (value) عشان المتصفح يرسل الداتا صحيحة للداتابيز</h4>
+        <input type="radio" name="r" id="r1" value="1">
+        <label for="r1">Option 1</label>
+        <br><br>
+        <input type="radio" name="r" id="r2" value="2">
+        <label for="r2">Option 2</label>
+        <br><br>
+        <input type="radio" name="r" id="r3" value="3">
+        <label for="r3">Option 3</label>
+        <br><br>
+        <input type="radio" name="r" id="r4" value="4">
+        <label for="r4">Option 4</label>
+        <br><br>
+        <button type="submit">submit</button>
+    </form>
     
+    <br><br>
+    
+    <form action="" method="get">
+        <label for="range" dir="rtl">اختار رينج معين عشان محدد بsteps معينة</label>
+        <br>
+        <input type="range" name="range" id="range" step="25" required>
+        <br><br>
+        <label for="phone">Enter phone number:</label>
+        <br>
+        <input type="tel" name="phone" id="phone" required>
+        <br><br>
+        <label for="text2">Enter text: بحد اقصى 20 حرف</label>
+        <br>
+        <input type="text" name="text2" id="text2" maxlength="20" required>
+        <br><br>
+        <label for="time">Enter time:</label>
+        <br>
+        <input type="time" name="time" id="time">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <br><br>
+
+    
+    <form action="" method="get" style="background: #ff000020; padding: 20px;">
+        <label for="selection">choose your option:</label>
+        <select name="selection" id="selection">choose your option:
+        <option value="" hidden selected></option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+
+    <form action="" method="get">
+        <p dir="rtl" align="left">textarea متظبط بالcss</p>
+        <textarea name="description" id="description" placeholder="Enter your description حد اقصى 50 حرف" maxlength="50" required></textarea>
+        <br>
+        <input type="submit" value="Submit description">
+    </form>
+
+
+    <br><br>
+
+
+    <div>
+        <video src="https://www.youtube.com/watch?v=pUb9EW770d0" poster="https://www.bing.com/images/search?view=detailV2&ccid=leZHkFF7&id=49B5581C2146B72AED0040504E087F16BEB54F49&thid=OIP.leZHkFF7IiIXb2QkPU2nlgHaEK&mediaurl=https%3A%2F%2Fimages.twinkl.co.uk%2Ftw1n%2Fimage%2Fprivate%2Ft_630%2Fu%2Fux%2Fswrt-alfatht-twynkl_ver_1.jpg&cdnurl=https%3A%2F%2Fth.bing.com%2Fth%2Fid%2FR.95e64790517b2222176f64243d4da796%3Frik%3DSU%252b1vhZ%252fCE5QQA%26pid%3DImgRaw%26r%3D0&exph=354&expw=630&q=s%2Cvm+hgthjpm&FORM=IRPRST&ck=5DB9E5777E7E973DACE854E4031C2F7C&selectedIndex=1&itb=0&cw=1145&ch=499&ajaxhist=0&ajaxserp=0">
+
+        </video>
+
+    </div>
+
+    <br><br>
+
+    <abbr title="SemiCode">SC</abbr>
+
+    <br><br><br>
+
 </body>
 </html>
