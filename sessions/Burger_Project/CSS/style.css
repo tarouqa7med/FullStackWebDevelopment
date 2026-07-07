@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Barlow Condensed, sans-serif;
+    scroll-behavior: smooth;
+}
+header {
+    background-color: #3E3E3E;
+    height: 100vh;
+}
+header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_img img {
+    width: 180px;
+    margin: 10px;
+    margin-left: 100px;
+}
+.container ul {
+    margin-right: 100px;
+}
+.container ul li {
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+}
+.container ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.header img {
+    margin-top: 50px;
+}
+.header h1,
+.header p {
+    color: white;
+}
+section#About {
+    background-color: #73281A;
+    display: flex;
+}
+.sec1 {
+    padding: 50px;
+    text-align: center;
+    color: white;
+    width: 65%;
+}
+.sec1 h2 {
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+.sec1 h5 {
+    margin-bottom: 50px;
+}
+.sec1 p {
+    text-align: left;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+.sec1 mark {
+    background-color: #FF894F;
+    color: black;
+    font-weight: bolder;
+    padding: 8px;
+    border-radius: 5px;
+}
+.sec2 {
+    margin: 75px;
+}
+.sec2 img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+section#Menu {
+    background-color: #3E3E3E;
+    padding: 30px;
+    color: white;
+}
+.menu h1 {
+    text-align: center;
+    margin-block: 20px;
+}
+.menu .burger {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.burger .order {
+    margin: 20px;
+
+}
+.order img {
+    width: 500px;
+    border-radius: 30px;
+}
+.order p {
+    margin-block: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+.order ul {
+    padding-left: 20px;
+    list-style: square;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 500px;
+    float: left;
+}
+
+.Booknow {
+    padding: 30px;
+    background-color: #73281A;
+    color: white;
+}
+.Booknow p {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.Booknow form * {
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+.Booknow form label {
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+.Booknow form input {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+.Booknow textarea {
+    width: 400px;
+    height: 150px;
+    margin-bottom: 50px;
+}
+.Booknow button {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    height: 50px;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    height: 50px;
+}
