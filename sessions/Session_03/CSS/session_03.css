@@ -1,0 +1,23 @@
+h2, h3 {
+    text-align: center;
+    direction: rtl;
+}
+div.a1 p {
+    background-color: red;
+    padding: 20px;
+}
+div.a2 p {
+    display: inline;
+    background-color: red;
+    padding: 20px;
+    width: 200px;
+}
+div.a3 p {
+    display: inline-block;
+    background-color: red;
+    padding: 20px;
+    width: 200px;
+    border: 10px solid blue;
+    outline: 10px solid green;
+    margin: 10px;
+}

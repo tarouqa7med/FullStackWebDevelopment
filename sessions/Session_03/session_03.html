@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        button {
+            text-decoration: none;
+            color: darkblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            padding: 15px;
+            background-color: rgb(193, 255, 255);
+            border: 2px solid darkblue;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 150ms;
+        }
+        button:hover {
+            background-color: rgb(147, 147, 255);
+            color: white;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+        }
+        button:active {
+            background-color: rgb(79, 79, 151);
+            color: white;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="./CSS/session_03.css">
+    <title>Session_03</title>
+</head>
+<body>
+    <button onclick="window.location.href='../../index.html'">Return to Main Page</button>
+    <h1 style="
+                        padding: 20px;
+                        background-image: linear-gradient(135deg, rgb(249, 207, 207), rgba(0, 0, 255, 0.25), #00000000, rgba(0, 0, 255, 0.25), rgb(249, 207, 207));
+                        font-family: cursive;
+                        font-size: 45px;
+                        color: brown;
+                        text-align: center;
+                        text-shadow: 0 0 20px brown;
+                    ">Session_03</h1>
+
+    <h2>display block:</h2>
+    <p>تاخد width, padding ولكن المشكلة ان كل عنصر ياخد سطر كامل</p>
+    <div class="a1">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+    
+    <h2>display inline:</h2>
+    <p dir="rtl">لا تقبل width ولكن تقبل padding</p>
+    <div class="a2">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+    
+    <h2>لحل المشكلة نستخدم inline-block</h2>
+    <h3>تستخدم لتحديد طول العناصر مع جعلها مرتبة جمب بعض</h3>
+    <p dir="rtl">محطوط outline وده بياخد جزء من مساحة margin</p>
+    <div class="a3">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+    </div>
+    
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>استخدام max-length , min-length</h2>
+    <p>محدد له طول ثابت</p>
+    <div style="width: 200px; height: 300px; background-color: red;"></div>
+    <p>محدد له طول اقصى وادنى طول</p>
+    <div style="min-width: 500px; max-width: 700px; width: 80%; height: 300px; background-color: blue;"></div>
+    <p>محدد له طول ثابت</p>
+    <div style="width: 600px; height: 300px; background-color: red;"></div>
+        
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>استخدام الpadding</h2>
+    <p>without <b><i>padding</i></b></p>
+    <div style="width: 70px; height: 70px; background-color: green;"></div>
+    <p>with <b><i>padding 20px</i></b></p>
+    <div style="padding: 20px; width: 70px; height: 70px; background-color: blue;"></div>
+    <p>with <b><i>padding-inline: 20px</i></b></p>
+    <div style="padding-inline: 20px; width: 70px; height: 70px; background-color: blue;"></div>
+    <p>with <b><i>padding-block: 20px</i></b></p>
+    <div style="padding-block: 20px; width: 70px; height: 70px; background-color: blue;"></div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>استخدام الmargin:</h2>
+    <p>without <b><i>margin</i></b></p>
+    <div style="width: 70px; height: 70px; background-color: green;"></div>
+    <p>with <b><i>margin 50px</i></b></p>
+    <div style="margin: 50px; width: 70px; height: 70px; background-color: blue;"></div>
+    <p>with <b><i>margin-inline: 100px</i></b></p>
+    <div style="margin-inline: 100px; width: 70px; height: 70px; background-color: blue;"></div>
+    <p>with <b><i>margin-block: 100px</i></b></p>
+    <div style="margin-block: 100px; width: 70px; height: 70px; background-color: blue;"></div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>استخدام الborder:</h2>
+    <p>بياخد المساحة من الwidth نفسه</p>
+    <h3>للبوردر اشكال</h3>
+    <p>without <b><i>border</i></b></p>
+    <div style="width: 70px; height: 70px; background-color: green;"></div>
+    <p>with <b><i>border 5px solid black</i></b></p>
+    <div style="border: 10px solid black; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">solid</div>
+    <div style="border: 10px dashed black; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">dashed</div>
+    <div style="border: 10px dotted black; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">dotted</div>
+    <div style="border: 10px double black; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">double</div>
+    <div style="border: 10px groove black; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">groove</div>
+
+    <h3>للبوردر ابعاد (border-radius)</h3>
+    <p>without <b><i>border</i></b></p>
+    <div style="width: 70px; height: 70px; background-color: green;"></div>
+    <p>with <b><i>border 5px solid black</i></b></p>
+    <div style="border: 5px solid black; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">5px</div>
+    <p>with <b><i>border-radius: 10px 20px 30px 40px</i></b></p>
+    <div style="border: 5px solid black; border-radius: 10px 20px 30px 40px; width: 150px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">5px</div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>استخدام الoutline</h2>
+    <p>بياخد المساحة من خارج الwidth</p>
+    <div style="outline: 5px solid red; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">solid</div>
+    <div style="outline: 5px dashed red; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">dashed</div>
+    <div style="outline: 5px dotted red; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">dotted</div>
+    <div style="outline: 5px double red; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">double</div>
+    <div style="outline: 5px groove red; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">groove</div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>استخدام الbox-sizing</h2>
+    <p dir="rtl">بتاخد قيمتين (content-box) و (border-box)</p>
+    <br>
+    <p dir="rtl">اي اضافات بتخلي الشكل يكبروقيمة الwidth الاصلية كأنها بتكبر</p>
+    <div style="box-sizing: content-box; padding: 20px; margin: 50px; border: 10px solid red; outline: 10px solid yellow; width: 150px; height: 150px; background-color: blue;  margin-bottom: 10px; text-align: center;">content-box</div>
+    <p dir="rtl">اي اضافات بتاخد من الwidth نفسه . لذلك يظل الwidth محافظ على قيمته </p>
+    <div style="box-sizing: border-box;  padding: 20px; margin: 50px; border: 10px solid red; outline: 10px solid yellow; width: 150px; height: 150px; background-color: green; margin-bottom: 10px; text-align: center;">border-box</div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <p dir="rtl">استخدام الbox-shadow:</p>
+    <h4>ليس لديه قيمة الانتشار</h4>
+    <div style="box-shadow: 10px 10px 5px red; width: 70px; height: 70px; background-color: blue; margin-bottom: 40px; text-align: center;">box-shadow</div>
+    <h4>لديه قيمة الانتشار</h4>
+    <div style="box-shadow: 10px 10px 5px 10px red, 10px 10px 5px yellow; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">box-shadow</div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>استخدام float:</h2>
+    <p dir="rtl">بتخلي العنصر يطفو على جنب</p>
+    <div style="overflow: auto;">
+        <div style="float: left; width: 70px; height: 70px; background-color: blue; margin-bottom: 10px; text-align: center;">float left</div>
+        <div style="float: left; width: 70px; height: 70px; background-color: red; margin-bottom: 10px; text-align: center;">float left</div>
+        <div style="float: left; width: 70px; height: 70px; background-color: rgb(255, 204, 0); margin-bottom: 10px; text-align: center;">float left</div>
+        <div style="clear: left; width: 70px; height: 70px; background-color: green; margin-bottom: 10px; text-align: center;">clear (لانهاء عمل float)</div>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>استخدام الoverflow:</h2>
+    <p dir="rtl">بتحدد طريقة عرض المحتوى الزائد عن حجم العنصر</p>
+    <p>visible</p>
+    <div style="width: 250px; height: 250px; background-color: blue; overflow: visible; margin-bottom: 100px; text-align: center;">Lorem ipsum d Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, beatae aspernatur possimus, cumdolor sit amet consectetur adipisicing elit. Maiores, beatae aspernatur possimus, cum ab tempore neque fugiat, nostrum minima ipsam dignissimos ratione accusantium deleniti nihil assumenda non adipisci expedita autem.olor sit amet consectetur adipisicing elit. Laborum iure iste ex, numquam consequatur commodi? Veniam repellendus voluptas facilis dignissimos aspernatur reiciendis consectetur officiis dolorem, ullam tenetur iusto saepe placeat.</div>
+    <p>hidden</p>
+    <div style="width: 250px; height: 250px; background-color: blue; overflow: hidden; margin-bottom: 30px; text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni iste, totam animi consectetur nemo distinctio sequi, ipsa natus molestiae quis hic maxime porro, consequatur deserunt delectus sit est minus eaque! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis fugiat unde dolores eum ipsum harum fugit distinctio vero! Incidunt nesciunt ratione voluptatum perspiciatis sunt ab voluptas, id sit temporibus in!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et eos perspiciatis necessitatibus at! Itaque aut veritatis eum? Quia, quae. Illo inventore aperiam ullam quia, possimus recusandae magni quaerat et sint?</div>
+    <p>scroll</p>
+    <div style="width: 250px; height: 250px; background-color: blue; overflow: scroll; margin-bottom: 10px; text-align: center;"><p style="width: 300px">Lorem,lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti blanditiis necessitatibus laboriosam cumque recusandae dolorum ipsam iure. Inventore, cumque fugiat vero officiis consequatur non quidem vitae accusantium asperiores incidunt ab? ipsum dolor sit amet consectetur adipisicing elit. Earum praesentium molestiae est laboriosam rerum nobis reprehenderit consequuntur optio. Quisquam, voluptatem beatae. Alias earum corrupti aliquid distinctio fugiat quo necessitatibus cupiditate.Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere beatae, molestias, vero corrupti aperiam eveniet labore illo quasi consequuntur sequi sapiente explicabo quisquam autem ipsum nemo dolorum minus, accusantium sint.</p></div>
+    <p>auto</p>
+    <div style="width: 250px; height: 250px; background-color: blue; overflow: auto; margin-bottom: 10px; text-align: center;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem vitae deserunt ab quos molestiae eligendi, natus laudantium! Quos cupiditate perspiciatis labore tempora vero ex enim esse quo vel, dignissimos non!</div>
+    <p>overflow-x</p>
+    <div style="width: 250px; height: 250px; background-color: blue; overflow-x: scroll; overflow-y: hidden; margin-bottom: 10px; text-align: center;"><img src="./CSS/download.webp" alt=""></div>
+    <p>overflow-y</p>
+    <div style="width: 250px; height: 250px; background-color: blue; overflow-x: hidden; overflow-y: scroll; margin-bottom: 10px; text-align: center;"><img src="./CSS/download.webp" alt=""></div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    </body>
+</html>
