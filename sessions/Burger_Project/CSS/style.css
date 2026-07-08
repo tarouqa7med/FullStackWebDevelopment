@@ -1,9 +1,11 @@
 
+@import url('./fonts.css');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Barlow Condensed, sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
     scroll-behavior: smooth;
 }
 header {
@@ -32,6 +34,7 @@ header > div {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 500;
     cursor: pointer;
 }
 .header {
@@ -46,6 +49,15 @@ header > div {
 .header h1,
 .header p {
     color: white;
+    font-family: "Barlow Condensed", sans-serif;
+}
+.header h1 {
+    font-size: 45px;
+    font-weight: 500;
+}
+.header p {
+    font-size: 20px;
+    font-weight: 300;
 }
 section#About {
     background-color: #73281A;
@@ -53,32 +65,41 @@ section#About {
 }
 .sec1 {
     padding: 50px;
+    padding-left: 50px;
     text-align: center;
     color: white;
-    width: 65%;
+    width: 50%;
 }
-.sec1 h2 {
+.sec1 h1 {
     margin-bottom: 20px;
-    font-size: 45px;
+    font-size: 65px;
+    font-weight: 600;
 }
 .sec1 h5 {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 15px;
 }
 .sec1 p {
     text-align: left;
     line-height: 30px;
+    font-weight: 300;
     letter-spacing: 2px;
-    font-size: 12px;
+    font-size: 15px;
+    width: 500px;
+    margin-left: 50px;
 }
 .sec1 mark {
     background-color: #FF894F;
     color: black;
-    font-weight: bolder;
+    font-weight: 600;
     padding: 8px;
     border-radius: 5px;
 }
 .sec2 {
-    margin: 75px;
+    margin: 50px;
+    width: 50%;
 }
 .sec2 img {
     width: 100%;
@@ -93,6 +114,8 @@ section#Menu {
 .menu h1 {
     text-align: center;
     margin-block: 20px;
+    font-size: 50px;
+    font-weight: 500;
 }
 .menu .burger {
     display: flex;
@@ -158,8 +181,9 @@ section#Menu {
     border: 1px solid white;
     border-radius: 10px;
     color: white;
-    font-size: 25px;
-    font-weight: bolder;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
     height: 50px;
 }
 
