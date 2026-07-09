@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            text-decoration: none;
+            color: darkblue;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bolder;
+            padding: 15px;
+            background-color: rgb(193, 255, 255);
+            border: 2px solid darkblue;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 150ms;
+        }
+        button:hover {
+            background-color: rgb(147, 147, 255);
+            color: white;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+        }
+        button:active {
+            background-color: rgb(79, 79, 151);
+            color: white;
+            border: 2px solid darkblue;
+            border-radius: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="./CSS/session_04.css">
+    <title>Session_03</title>
+</head>
+<body>
+    <button onclick="window.location.href='../../index.html'">Return to Main Page</button>
+    <h1 style="
+                        padding: 20px;
+                        background-image: linear-gradient(135deg, rgb(249, 207, 207), rgba(0, 0, 255, 0.25), #00000000, rgba(0, 0, 255, 0.25), rgb(249, 207, 207));
+                        font-family: cursive;
+                        font-size: 45px;
+                        color: brown;
+                        text-align: center;
+                        text-shadow: 0 0 20px brown;
+                    ">Session_04</h1>
+
+    <h1 style="text-align: center;">finish <mark style="padding: 15px;"><a href="./../Burger_Project/index.html">Burger_Project</a></mark></h1>
+    <br><br><br>
+    <hr style="border: 5px solid red;">
+    <br><br><br>
+    <br><br><br>
+
+    <h2>Hover</h2>
+    <div class="original1">
+
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>Focus</h2>
+    <button class="original2"></button>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>Checked</h2>
+    <br><br>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 100px;">
+        (1) & (3) are checked
+        <input type="checkbox" name="" id="" checked>
+        <input type="checkbox" name="" id="">
+        <input type="checkbox" name="" id="" checked>
+        <input type="checkbox" name="" id="">
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>Disabled</h2>
+    <label>not disabled</label>
+    <input type="text">
+    <br><br><br>
+    <label>disabled</label>
+    <input type="text" disabled>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>Required</h2>
+    <form action="">
+        <label>not required</label>
+    <input type="text">
+    <br><br><br>
+    <label>required</label>
+    <input type="text" required>
+    <input type="submit" value="submit">
+    </form>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>:first-child</h2>
+    <code>
+        .ul1 li:first-child {
+            color: red;
+        }
+    </code>
+    <ul class="ul1">
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+    </ul>
+    
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>:last-child</h2>
+    <code>
+        .ul2 li:last-child {
+            color: red;
+        }
+    </code>
+    <ul class="ul2">
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+    </ul>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>:nth-child(2n)</h2>
+    <code>
+        .ul3 li:nth-child(2n) {
+            color: red;
+        }
+    </code>
+    <ul class="ul3">
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+    </ul>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>:nth-child(4)</h2>
+    <code>
+        .ul4 li:nth-child(4) {
+            color: red;
+        }
+    </code>
+    <ul class="ul4">
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+    </ul>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>:first-child(3n+2)</h2>
+    <code>
+        .ul5 li:nth-child(3n+2) {
+            color: red;
+        }
+</code>
+    <ul class="ul5">
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+    </ul>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>:not</h2>
+    <code>
+        .ul6 li:not(:nth-child(3)) {
+            color: red;
+        }
+    </code>
+    <ul class="ul6">
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+        <li>QWERTY</li>
+    </ul>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>transition-duration</h2>
+    <mark>with transition-property: all;</mark>
+    <h3>1s</h3>
+    <div class="original3">
+
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>transition-property (width only)</h2>
+    <h3>1s</h3>
+    <div class="original4">
+
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>transition-property (background color only)</h2>
+    <h3>1s</h3>
+    <div class="original5">
+
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>transition-timing-function (linear)</h2>
+    <h3>1s</h3>
+    <div class="original6">
+
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>transition-timing-function (ease)</h2>
+    <h3>1s</h3>
+    <div class="original7">
+
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>transition-timing-function (ease-in)</h2>
+    <h3>1s</h3>
+    <div class="original8">
+
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>transition-timing-function (ease-out)</h2>
+    <h3>1s</h3>
+    <div class="original9">
+
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>transition-delay</h2>
+    <h3>1s</h3>
+    <div class="original10">
+
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>Position (absolute)</h2>
+    <div class="parent1">
+        relative
+        <div class="child1">absolute</div>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>Position (sticky)</h2>
+    <div class="parent2">
+        relative
+        <div class="child2">sticky</div>
+    </div>
+    
+    <br><br>
+    <hr>
+    <br><br>
+
+    <h2>Position (fixed)</h2>
+    <div class="parent3">
+        relative
+        <div class="child3">fixed</div>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+    
+</body>
+</html>
