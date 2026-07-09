@@ -1,0 +1,12 @@
+
+body {
+    perspective: 600px;
+}
+div {
+    width: 400px;
+    height: 400px;
+    background-color: #09c;
+    display: block;
+    margin: auto;
+    transform: sk;
+}
