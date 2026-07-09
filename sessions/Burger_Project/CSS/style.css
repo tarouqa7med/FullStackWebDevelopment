@@ -159,9 +159,9 @@ section#Menu .container .burger .order p {
     font-size: 30px;
 }
 section#Menu .container .burger .order ul {
-    padding-left: 20px;
+    padding-left: 40px;
     list-style: square;
-    width: 90%;
+    width: 100%;
     margin: auto;
     font-weight: 300;
 }
