@@ -6,7 +6,8 @@
     <title>Main Page</title>
     <style>
         body {
-            padding: 50px 0;
+            margin: 0;
+            padding-block: 25px;
             background-image: linear-gradient(to right bottom, rgba(147, 147, 255, 0.534), white, rgba(147, 147, 255, 0.534));
             background-repeat: no-repeat;
             height: 100%;
@@ -16,6 +17,8 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: darkblue;
             font-size: 40px;
+            padding: 10px;
+            background: linear-gradient( 90deg, rgb(147, 147, 255), transparent, rgb(147, 147, 255));
         }
         h3 {
             text-align: center;
@@ -55,9 +58,12 @@
             border: 2px solid darkblue;
             border-radius: 10px;
         }
+        hr {
+            border: 1.5px solid darkblue;
+        }
         @media screen and (max-width: 515px) {
-            body {
-                scale: 0.75;
+            body table {
+                scale: 0.85;
             }
             h1 {
                 font-size: 30px;
@@ -69,7 +75,8 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to my Website</h1>
+
+    <h1 class="welcome">Welcome to my Website</h1>
 
     <h3>Sessions</h3>
     <table border="1" cellpadding="25">
