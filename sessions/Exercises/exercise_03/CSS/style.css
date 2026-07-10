@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section1::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("./images/bg3-8907ec01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section1 {
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
+.section1 .exercise {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: #0099CC;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.section1 div::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    transition-duration: 2s;
+    z-index: 1;
+}
+.section1 div:hover::before {
+    background-color: #2a3f55b3;
+    transform: translate(-50%, -50%) rotate(360deg);
+}
+.section1 div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.section1 div img {
+    position: relative;
+    width: 100%;
+    transition-duration: 1s;
+    transition-delay: 2s;
+}
+.section1 div:hover img {
+    scale: 1.2;
+}
+.section1 div h2,
+.section1 div p {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    color: white;
+    transition-duration: 0s;
+    z-index: 2;
+}
+.section1 div h2 {
+    background-color: #2A3F55;
+    height: 60px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 div p {
+    top: 60px;
+    padding: 20px;
+    text-align: center;
+}
+.section1 div:hover h2,
+.section1 div:hover p {
+    opacity: 1;
+    left: 0;
+    text-align: center;
+    transition-duration: 2s;
+    transition-delay: 3s;
+}
+.section1 div:hover p {
+    transition-delay: 4s;
+}
+
+
+
+
+/* ------------------------------------------------- */
+
+
+
+
+.section2::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("./images/bg3-8907ec01.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section2 {
+    padding: 0;
+    height: 100vh;
+    position: relative;
+}
+.section2 .exercise {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: #0099CC;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+.section2 .container {
+    width: 300px;
+    /* background-color: white; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+.section2 .container img {
+    width: 100%;
+}
+.section2 .container img:hover {
+    backface-visibility: visible;
+    transform: rotateY(180deg);
+    transition-duration: 1s;
+}
+.section2 .container .details {
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.section2 .container:hover .details {
+    left: 0;
+}
