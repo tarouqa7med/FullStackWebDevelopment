@@ -31,7 +31,7 @@
         }
     </style>
     <link rel="stylesheet" href="./CSS/session_05.css">
-    <title>Session_03</title>
+    <title>Session_05</title>
 </head>
 <body>
     <button onclick="window.location.href='./../../../index.html'">Return to Main Page</button>
@@ -45,7 +45,173 @@
                         text-shadow: 0 0 20px brown;
                     ">Session_05</h1>
 
-    <div></div>
+    
+    <br><br><br>
+    <hr>
+    <br><br><br>
+
+    <div>
+        <h2>transform</h2>
+        <div class="transform">original</div>
+        <div class="transform">transform: rotate(45deg);</div>
+        <div class="transform">transform: rotateX(65deg);</div>
+        <div class="transform">transform: rotateY(75deg);</div>
+        <div class="transform">transform: rotateZ(30deg);</div>
+        <div class="transform">transform: scale(2);</div>
+        <div class="transform">transform: scaleX(2);</div>
+        <div class="transform">transform: scaleY(2);</div>
+        <div class="transform">transform: skew(30deg);</div>
+        <div class="transform">transform: skewX(30deg);</div>
+        <div class="transform">transform: skewY(30deg);</div>
+        <div class="transform">transform: translate(300px, 20px) تروح يمين 300px وبعدين تنزل تحت 20px</div>
+        <div class="transform">transform: translateX(200px); تروح يمين</div>
+        <div class="transform">transform: translateY(-40px); تطلع فوق</div>
+        <div class="transform">transform: translateZ(300px);</div>
+        <div class="transform">transform: translate3d(300px, 20px, 300px);</div>
+        <div class="transform"> transform: perspective(1000px) rotateY(45deg);</div>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <div>
+        <h2>Psedo-Element</h2>
+        <h3 dir="rtl">الاسود عنصر والابيض هو before والازرق هو after</h3>
+        <h4 dir="rtl">لازم دائم العنصر ياخد بوزيشن relative والbefore&after ياخدو : <br>
+            position: absolute; <br>
+            top: 50%; <br>
+            left: 50%; <br>
+            transform: translate(-50%, -50%); <br>
+            width: 100%; <br>
+            height: 100%; <br>
+        </h4>
+        <div class="parent">Original Element</div>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <div>
+        <h2>Flexbox (space-between)</h2>
+        <div class="flexbox">
+            <div class="flexbox-item">1</div>
+            <div class="flexbox-item">2</div>
+            <div class="flexbox-item">3</div>
+            <div class="flexbox-item">4</div>
+            <div class="flexbox-item">5</div>
+        </div>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <div>
+        <h2>Flexbox (space-around)</h2>
+        <div class="flexbox-around">
+            <div class="flexbox-item">1</div>
+            <div class="flexbox-item">2</div>
+            <div class="flexbox-item">3</div>
+            <div class="flexbox-item">4</div>
+            <div class="flexbox-item">5</div>
+        </div>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <div>
+        <h2>Flexbox (space-evenly)</h2>
+        <div class="flexbox-evenly">
+            <div class="flexbox-item">1</div>
+            <div class="flexbox-item">2</div>
+            <div class="flexbox-item">3</div>
+            <div class="flexbox-item">4</div>
+            <div class="flexbox-item">5</div>
+        </div>
+    </div>
+
+    <br><br>
+    <hr><br>
+
+    <div>
+        <h2>Flexbox (center)</h2>
+        <div class="flexbox-center">
+            <div class="flexbox-item">1</div>
+            <div class="flexbox-item">2</div>
+            <div class="flexbox-item">3</div>
+            <div class="flexbox-item">4</div>
+            <div class="flexbox-item">5</div>
+        </div>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <div>
+        <h2>backface-visibility</h2>
+        <div class="backface-visibility">
+            <div class="backface-visibility-item">1</div>
+            <div class="backface-visibility-item">2</div>
+            <div class="backface-visibility-item">3</div>
+            <div class="backface-visibility-item">4</div>
+            <div class="backface-visibility-item">5</div>
+    </div>
+
+        <br><br>
+    <hr>
+    <br><br>
+
+    <div>
+        <h2>flex-grow (1) & (4)</h2>
+        <div class="flex-grow">
+            <div class="flex-grow-item">1</div>
+            <div class="flex-grow-item">2</div>
+            <div class="flex-grow-item">3</div>
+            <div class="flex-grow-item">4</div>
+            <div class="flex-grow-item">5</div>
+        </div>
+    </div>
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <div>
+        <h2>flex-shrink (1) & (4)</h2>
+        <div class="flex-shrink">
+            <div class="flex-shrink-item">1</div>
+            <div class="flex-shrink-item">2</div>
+            <div class="flex-shrink-item">3</div>
+            <div class="flex-shrink-item">4</div>
+            <div class="flex-shrink-item">5</div>
+        </div>
+    </div>
+
+
+    <br><br>
+    <hr>
+    <br><br>
+
+    <div>
+        <h2>:root</h2>
+        <code>
+            :root {
+                --primary-color: #09c;
+                --secondary-color: #fff;
+            }
+        </code>
+        <div class="root">
+            <div class="root-item">1</div>
+            <div class="root-item">2</div>
+            <div class="root-item">3</div>
+            <div class="root-item">4</div>
+            <div class="root-item">5</div>
+        </div>
 
 </body>
 </html>
