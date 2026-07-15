@@ -1,0 +1,41 @@
+
+@keyframes designer {
+    0% {
+        content: "Professional Web |";
+    } 10% {
+        content: "Professional Web |";
+    } 20% {
+        content: "Professional Web D |";
+    } 30% {
+        content: "Professional Web De |";
+    } 40% {
+        content: "Professional Web Des |";
+    } 50% {
+        content: "Professional Web Desi |";
+    } 60% {
+        content: "Professional Web Desig |";
+    } 70% {
+        content: "Professional Web Design |";
+    } 80% {
+        content: "Professional Web Designe |";
+    } 90% {
+        content: "Professional Web Designer |";
+    } 100% {
+        content: "Professional Web Designer |";
+    }
+}
+
+@keyframes anchor {
+    0% {
+        top: -12px;
+        opacity: 1;
+    } 50% {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    } 100% {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+    }
+}
