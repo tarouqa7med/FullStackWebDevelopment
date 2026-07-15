@@ -1,1 +1,62 @@
 
+@media screen and (max-width: 1300px) {
+    /* 350px */
+    
+}
+@media screen and (min-width: 371px) and (max-width: 1300px) {
+    /* 450px */
+    
+}
+@media screen and (min-width: 577px) and (max-width: 1300px) {
+    /* 650px */
+    
+    header .welcome {
+        width: 70%;
+        z-index: -1;
+        background-color: yellow;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    /* 850px */
+    
+    header .welcome {
+        width: 60%;
+        z-index: -1;
+        background-color: green;
+        scale: 90%;
+    }
+    header nav div .responsive {
+        display: block;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+    /* 1050px */
+    
+    header .welcome {
+        width: 50%;
+        z-index: -1;
+        scale: 100%;
+        background-color: blue;
+    }
+    
+}
+@media screen and (min-width: 1181px) and (max-width: 1300px) {
+    /* 1200px */
+    
+    header .welcome {
+        background-color: red;
+        width: 40%;
+        scale: 105%;
+        z-index: -1;
+    }
+    header .welcome a {
+        transform: translateY(120px);
+    }
+    .portfolio .container .portfolio-pics {
+        gap: 10px;
+    }
+    .portfolio .container .portfolio-pics div {
+        width: 32%;
+        height: 240px;
+    }
+}

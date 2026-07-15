@@ -39,6 +39,33 @@ header nav .container {
 header nav .container img {
     width: 60px;
 }
+header nav div .responsive {
+    display: none;
+    width: 50px;
+    height: 40px;
+    border: 2px solid var(--main-text);
+    border-radius: 10px;
+    background-color: var(--main-bgColor);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav div .responsive div span {
+    margin-bottom: 6px;
+    width: 35px;
+    height: 2px;
+    display: block;
+    background-color: var(--main-text);
+}
+header nav div .responsive div span:first-child {
+    margin-top: 9px;
+}
 header nav .container ul li {
     position: relative;
     font-family: 'Roboto', sans-serif;
