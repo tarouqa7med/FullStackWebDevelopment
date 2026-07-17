@@ -32,15 +32,18 @@ header nav {
     background-color: var(--main-bgColor);
 }
 header nav .container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-header nav .container img {
+header nav .container > div {
+    position: relative;
+}
+header nav .container > div > img {
     width: 60px;
 }
 header nav div .responsive {
-    display: none;
     width: 50px;
     height: 40px;
     border: 2px solid var(--main-text);
@@ -49,9 +52,9 @@ header nav div .responsive {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    right: 100px;
+    right: 0;
     transform: translateY(-50%);
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -100,7 +103,7 @@ header nav .container ul li a:hover {
 header .welcome {
     color: white;
     text-align: center;
-    width: 35%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -170,39 +173,36 @@ header .welcome a::after {
 }
 
 .about {
-    padding-top: 25px;
-    height: 90vh;
+    padding: 35px;
     background-color: var(--second-bgColor);
     scroll-margin-top: 65px;
 }
 .about .container {
-    padding-top: 35px;
-    display: flex;
-    justify-content: space-between;
     margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
     position: relative;
     z-index: 0;
 }
 .about .container .profile {
-    width: 50%;
+    width: fit-content;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+    justify-content: start;
+    align-items: start;
 }
-.about .container .frame {
-    position: absolute;
-    top: 0;
-    left: 80px;
+.about .container .profile .frame {
     width: 300px;
     height: 350px;
     border: 4px solid var(--main-text);
     border-radius: 10px;
-    z-index: -1;
-}
-.about .container .picture {
     position: relative;
-    top: 10px;
+}
+.about .container .profile .picture {
+    position: absolute;
+    top: 15px;
+    left: 15px;
     background-image: url("./images/profile-00afb74a.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -213,7 +213,7 @@ header .welcome a::after {
     border-radius: 10px;
     overflow: hidden;
 }
-.about .container .picture .layout1 {
+.about .container .profile .picture .layout1 {
     position: absolute;
     top: 100%;
     left: 0;
@@ -226,13 +226,13 @@ header .welcome a::after {
     justify-content: center;
     align-items: center;
 }
-.about .container .picture:hover .layout1 {
+.about .container .profile .picture:hover .layout1 {
     top: 0;
 }
-.about .container .picture .layout1 ul {
+.about .container .profile .picture .layout1 ul {
     gap: 15px;
 }
-.about .container .picture .layout1 ul li {
+.about .container .profile .picture .layout1 ul li {
     transform: translateY(-15px);
     background-color: white;
     display: flex;
@@ -243,33 +243,33 @@ header .welcome a::after {
     border-radius: 50%;
     opacity: 0;
 }
-.about .container .picture:hover .layout1 ul li {
+.about .container .profile .picture:hover .layout1 ul li {
     opacity: 1;
     transition-duration: 1s;
     transform: translateY(0px);
 }
-.about .container .picture:hover .layout1 ul li:nth-child(1) {
+.about .container .profile .picture:hover .layout1 ul li:nth-child(1) {
     transition-delay: 1s;
 }
-.about .container .picture:hover .layout1 ul li:nth-child(2) {
+.about .container .profile .picture:hover .layout1 ul li:nth-child(2) {
     transition-delay: 1.25s;
 }
-.about .container .picture:hover .layout1 ul li:nth-child(3) {
+.about .container .profile .picture:hover .layout1 ul li:nth-child(3) {
     transition-delay: 1.5s;
 }
-.about .container .picture:hover .layout1 ul li:nth-child(4) {
+.about .container .profile .picture:hover .layout1 ul li:nth-child(4) {
     transition-delay: 1.75s;
 }
-.about .container .picture .layout1 ul li:nth-child(1) a i {
+.about .container .profile .picture .layout1 ul li:nth-child(1) a i {
     color: blue;
 }
-.about .container .picture .layout1 ul li:nth-child(2) a i {
+.about .container .profile .picture .layout1 ul li:nth-child(2) a i {
     color: rgb(239, 36, 69);
 }
-.about .container .picture .layout1 ul li:nth-child(3) a i {
+.about .container .profile .picture .layout1 ul li:nth-child(3) a i {
     color: rgb(0, 170, 255);
 }
-.about .container .picture .layout1 ul li:nth-child(4) a i {
+.about .container .profile .picture .layout1 ul li:nth-child(4) a i {
     color: #333;
 }
 .about .container .details {
@@ -287,7 +287,6 @@ header .welcome a::after {
     margin-bottom: 20px;
     color: #C1C1C1;
     line-height: 24px;
-    width: 510px;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
@@ -297,27 +296,28 @@ header .welcome a::after {
     margin-bottom: 20px;
 }
 .about .container .details .layout2 {
-    float: left;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
-.about .container .details .layout2 .div1 {
-    margin-right: 100px;
+.about .container .details .layout2 .col {
+    width: 50%;
 }
-.about .container .details .layout2 .div1 p,
-.about .container .details .layout2 .div2 p {
-    margin-bottom: 10px;
+.about .container .details .layout2 .col div {
+    overflow: auto;
+}
+.about .container .details .layout2 .col div p {
+    display: flex;
     width: fit-content;
-    font-family: 'Roboto', sans-serif;
+    float: left;
 }
-.about .container .details .layout2 .div1 p b,
-.about .container .details .layout2 .div2 p b {
+.about .container .details .layout2 .col div p:first-child {
     color: white;
     font-family: "Exo 2", sans-serif;
 }
-.about .container .details .btns {
-    clear: both;
+.about .container .details .layout2 .col div p:last-child {
+    font-family: 'Roboto', sans-serif;
 }
 .about .container .details .btns button {
     background-color: transparent;
@@ -336,7 +336,7 @@ header .welcome a::after {
 }
 
 .services {
-    height: 65vh;
+    padding-block: 25px;
     background-color: var(--second-bgColor);
     text-align: center;
     scroll-margin-top: 120px;
@@ -348,9 +348,10 @@ header .welcome a::after {
     font-size: 35px;
 }
 .services .container .squares {
-    margin-top: 50px;
+    margin-top: 25px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     color: white;
@@ -358,9 +359,8 @@ header .welcome a::after {
     z-index: 0;
 }
 .services .container .squares div {
-    padding: 15px;
+    padding: 35px 25px;
     width: 24%;
-    height: 175px;
     background-color: var(--second-bgColor);
     border: 1px solid var(--main-text);
     border-radius: 10px;
@@ -405,6 +405,8 @@ header .welcome a::after {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    padding-inline: 50px;
 }
 .portfolio .container h2 {
     color: white;
@@ -414,13 +416,13 @@ header .welcome a::after {
     font-family: 'Exo 2', sans-serif;
 }
 .portfolio .container .portfolio-pics {
-    margin-top: 50px;
+    margin-top: 25px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 .portfolio .container .portfolio-pics div::before {
     content: "";
@@ -532,10 +534,13 @@ header .welcome a::after {
 .blog .container .blogs {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    gap: 50px;
 }
 .blog .container .blogs > div {
+    margin-bottom: 35px;
     width: 270px;
     height: 100%;
     display: flex;

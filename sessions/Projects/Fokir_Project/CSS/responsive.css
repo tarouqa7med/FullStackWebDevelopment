@@ -1,62 +1,321 @@
 
+@media screen and (max-width: 400px) {
+    /* 250px */
+
+    header .welcome p:nth-child(1) {
+        font-size: 22px;
+    }
+    header .welcome h1 {
+        font-size: 35px;
+    }
+    header nav div .responsive {
+        display: flex;
+    }
+    header nav .container > div:last-child {
+        position: absolute;
+        top: 80px;
+        display: flex;
+        justify-content: center;
+        transition-duration: 1s;
+        width: 100%;
+        height: 0;
+        background-color: var(--main-bgColor);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    header nav .container > div:last-child .ul ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    header nav div .responsive:focus + div:last-child {
+        padding: 20px;
+        height: 240px;
+    }
+    .about .container {
+        width: 100%;
+        justify-content: center;
+    }
+    .about .container .profile,
+    .about .container .details {
+        width: 350px;
+    }
+    .about .container .details p {
+        width: 90%;
+    }
+    .about .container .details .layout2 .col div {
+        width: 100%;
+    }
+    .about .container .profile .frame,
+    .about .container .profile .picture {
+        width: 250px;
+    }
+    .services .container .squares div {
+        width: 95%;
+        margin: 15px;
+    }
+    .services .container .squares div i {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .services .container .squares div p:nth-of-type(1) {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .services .container .squares div p:nth-of-type(2) {
+        font-size: 18px;
+    }
+    .contactUs .container .form {
+        width: 100%;
+    }
+    .contactUs .container .form form div {
+        display: block;
+    }
+    .contactUs .container .form form div input {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 703px) {
+    .about .container .details .layout2 .col {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 740px) {
+    .blog .container .blogs > div {
+        width: 400px;
+    }
+    .blog .container .blogs > div .pic img,
+    .blog .container .blogs > div .pic iframe {
+        height: 250px;
+        margin-bottom: 30px;
+    }
+    .blog .container .blogs > div .info {
+    padding-bottom: 40px;
+    padding-left: 40px;
+    }
+    .blog .container .blogs > div .info h3 {
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+    .blog .container .blogs > div .info h2 {
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+    .blog .container .blogs > div .info p {
+        margin-bottom: 30px;
+        width: 90%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .blog .container .blogs > div .info a {
+        padding: 10px 12px;
+        font-size: 18px;
+    }
+}
 @media screen and (max-width: 1300px) {
     /* 350px */
     
 }
-@media screen and (min-width: 371px) and (max-width: 1300px) {
+@media screen and (min-width: 371px) and (max-width: 576px) {
     /* 450px */
-    
-}
-@media screen and (min-width: 577px) and (max-width: 1300px) {
-    /* 650px */
-    
-    header .welcome {
-        width: 70%;
-        z-index: -1;
-        background-color: yellow;
-    }
-}
-@media screen and (min-width: 768px) and (max-width: 1300px) {
-    /* 850px */
-    
-    header .welcome {
-        width: 60%;
-        z-index: -1;
-        background-color: green;
-        scale: 90%;
+
+    header .welcome h1 {
+        font-size: 55px;
     }
     header nav div .responsive {
-        display: block;
+        display: flex;
     }
-}
-@media screen and (min-width: 992px) and (max-width: 1300px) {
-    /* 1050px */
-    
-    header .welcome {
-        width: 50%;
-        z-index: -1;
-        scale: 100%;
-        background-color: blue;
+    header nav .container > div:last-child {
+        position: absolute;
+        top: 80px;
+        display: flex;
+        justify-content: center;
+        transition-duration: 1s;
+        width: 100%;
+        height: 0;
+        background-color: var(--main-bgColor);
+        border-radius: 20px;
+        overflow: hidden;
     }
-    
-}
-@media screen and (min-width: 1181px) and (max-width: 1300px) {
-    /* 1200px */
-    
-    header .welcome {
-        background-color: red;
-        width: 40%;
-        scale: 105%;
-        z-index: -1;
+    header nav .container > div:last-child .ul ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
     }
-    header .welcome a {
-        transform: translateY(120px);
-    }
-    .portfolio .container .portfolio-pics {
-        gap: 10px;
-    }
-    .portfolio .container .portfolio-pics div {
-        width: 32%;
+    header nav div .responsive:focus + div:last-child {
+        padding: 20px;
         height: 240px;
     }
+    .about .container .profile,
+    .about .container .details {
+        width: 300px;
+        justify-content: center;
+    }
+    .about .container .details {
+        width: 100%;
+    }
+    .about .container .profile {
+        scale: 0.8;
+    }
+    .services .container .squares div {
+        width: 85%;
+        margin: 15px;
+    }
+    .services .container .squares div i {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .services .container .squares div p:nth-of-type(1) {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .services .container .squares div p:nth-of-type(2) {
+        font-size: 18px;
+    }
+    .contactUs .container .form {
+        width: 100%;
+    }
+    .contactUs .container .form form div {
+        display: block;
+    }
+    .contactUs .container .form form div input {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    /* 650px */
+
+    .about .container .profile,
+    .about .container .details {
+        width: 80%;
+        justify-content: center;
+    }
+    header nav div .responsive {
+        display: flex;
+    }
+    header nav .container > div:last-child {
+        position: absolute;
+        top: 80px;
+        display: flex;
+        justify-content: center;
+        transition-duration: 1s;
+        width: 100%;
+        height: 0;
+        background-color: var(--main-bgColor);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    header nav .container > div:last-child .ul ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    header nav div .responsive:focus + div:last-child {
+        padding: 20px;
+        height: 240px;
+    }
+    .services .container .squares div {
+        width: 75%;
+        margin: 15px;
+    }
+    .services .container .squares div i {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    .services .container .squares div p:nth-of-type(1) {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .services .container .squares div p:nth-of-type(2) {
+        font-size: 18px;
+    }
+    .portfolio .container {
+        width: 100%;
+    }
+    .portfolio .container .portfolio-pics div {
+        width: 450px;
+        height: 300px;
+    }
+    .contactUs .container .form form div {
+        display: block;
+    }
+    .contactUs .container .form form div input {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* 850px */
+
+    .about .container .profile,
+    .about .container .details {
+        width: 80%;
+        justify-content: center;
+    }
+    header nav div .responsive {
+        display: flex;
+    }
+    header nav .container > div:last-child {
+        position: absolute;
+        top: 80px;
+        display: flex;
+        justify-content: center;
+        transition-duration: 1s;
+        width: 100%;
+        height: 0;
+        background-color: var(--main-bgColor);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    header nav .container > div:last-child .ul ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    header nav div .responsive:focus + div:last-child {
+        padding: 20px;
+        height: 240px;
+    }
+    .services .container .squares div {
+        width: 45%;
+        margin: 15px;
+    }
+    .portfolio .container .portfolio-pics div {
+        width: 450px;
+        height: 300px;
+    }
+    .contactUs .container .form form div {
+        display: block;
+    }
+    .contactUs .container .form form div input {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1180px) {
+    /* 1050px */
+
+    .about .container .details .layout2 .col div {
+        width: 115%;
+    }
+    .services .container .squares {
+        justify-content: space-between;
+    }
+    .portfolio .container .portfolio-pics div {
+        width: 375px;
+        height: 275px;
+    }
+    .blog .container .blogs {
+        gap: 10px;
+    }
+}
+@media screen and (min-width: 1180px) and (max-width: 1300px) {
+    /* 1200px */
+
 }
