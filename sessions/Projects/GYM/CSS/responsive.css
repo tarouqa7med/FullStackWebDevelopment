@@ -68,6 +68,15 @@
         width: 70px;
         font-size: 8px;
     }
+    section#About .container > div:first-child h2 {
+        margin: auto;
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    section#About .container > div:first-child p {
+        font-size: 12px;
+    }
     .services .container .div,
     .services .container .div.right-left {
         flex-direction: column-reverse;
@@ -112,6 +121,9 @@
     section#About .container {
         margin-top: 35px;
         flex-direction: column;
+    }
+    section#About .container > div:first-child {
+        width: 100%;
     }
     .clients .container .layout {
         flex-direction: column;
