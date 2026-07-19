@@ -345,15 +345,11 @@ section.trainers {
     justify-content: space-evenly;
     align-items: center;
 }
-.trainers .container .layout .coach > * {
-    margin-bottom: 20px;
-}
 .trainers .container .layout .coach img {
     width: 150px;
     height: 160px;
     display: block;
-    margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
     border: 5px solid var(--main);
     border-radius: 50%;

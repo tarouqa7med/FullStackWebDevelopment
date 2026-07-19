@@ -98,8 +98,30 @@
         width: 80%;
     }
 }
+@media screen and (max-width: 460px) {
+
+    section#About .container > div:last-child {
+        width: 90%;
+    }
+    section#About .container > div:last-child img {
+        width: 100%;
+    }
+.services .container .div .service-info {
+        width: 90%;
+    }
+    .services .container .div .service-info h2 {
+        font-size: 24px;
+    }
+}
 @media screen and (max-width: 560px) {
     
+    .services .container .div .service-info h2 {
+        font-size: 24px;
+    }
+    .trainers .container .layout .coach {
+        padding-block: 35px;
+        height: 500px;
+    }
     footer .container .div > div:nth-child(2) {
         width: 100%;
     }
