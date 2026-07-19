@@ -7,6 +7,7 @@
 :root {
     --main: #E55556;
     --fontOswald: Oswald, sans-serif;
+    --fontPTSans: PT Sans, sans-serif;
 }
 html {
     scroll-behavior: smooth;
