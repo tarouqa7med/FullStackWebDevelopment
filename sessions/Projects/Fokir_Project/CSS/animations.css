@@ -1,4 +1,33 @@
 
+@keyframes blur {
+    0% {
+        filter: blur(35px);
+    }  100% {
+        filter: blur(0px);
+    }
+}
+
+
+@keyframes pulse {
+    0% {
+        scale: 1.15;
+    } 50% {
+        scale: 1;
+    } 100% {
+        scale: 1.15;
+    }
+}
+
+@keyframes change-color {
+    0% {
+        color: white;
+    } 80% {
+        color: red;
+    } 100% {
+        color: black;
+    }
+}
+
 @keyframes designer {
     0% {
         content: "Professional Web |";

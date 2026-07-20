@@ -21,6 +21,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
+    filter: drop-shadow(0 0 10px var(--main-text));
     z-index: 1000;
 }
 header nav {
@@ -30,6 +31,7 @@ header nav {
     width: 100%;
     height: 65px;
     background-color: var(--main-bgColor);
+    z-index: 999;
 }
 header nav .container {
     position: relative;
@@ -42,6 +44,7 @@ header nav .container > div {
 }
 header nav .container > div > img {
     width: 60px;
+    filter: drop-shadow(0 0 10px var(--main-text));
 }
 header nav div .responsive {
     width: 50px;
@@ -49,6 +52,7 @@ header nav div .responsive {
     border: 2px solid var(--main-text);
     border-radius: 10px;
     background-color: var(--main-bgColor);
+    filter: drop-shadow(0 0 10px var(--main-text));
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -65,6 +69,7 @@ header nav div .responsive div span {
     height: 2px;
     display: block;
     background-color: var(--main-text);
+    filter: drop-shadow(0 0 3px var(--main-text));
 }
 header nav div .responsive div span:first-child {
     margin-top: 9px;
@@ -95,10 +100,12 @@ header nav .container ul li.active::after {
 }
 header nav .container ul li a {
     transition-duration: 500ms;
+    filter: drop-shadow(0 0 3px white);
 }
 header nav .container ul li.active a,
 header nav .container ul li a:hover {
     color: var(--main-text);
+    filter: drop-shadow(0 0 5px var(--main-text));
 }
 header .welcome {
     color: white;
@@ -113,11 +120,15 @@ header .welcome p:nth-child(1) {
     font-size: 25px;
     font-family: 'Exo 2', sans-serif;
     margin-bottom: 10px;
+    filter: drop-shadow(0 0 2px white);
 }
 header .welcome h1 {
+    margin-bottom: 15px;
     color: var(--main-text);
     font-size: 70px;
     font-family: 'Exo 2', sans-serif;
+    filter: drop-shadow(0 0 10px var(--main-text));
+    animation: pulse 2s ease-in-out 1s infinite normal both;
 }
 header .welcome p.designer {
     width: fit-content;
@@ -126,6 +137,7 @@ header .welcome p.designer {
     position: relative;
     margin: auto;
     display: block;
+    filter: drop-shadow(0 0 2px white);
 }
 header .welcome p.designer::after {
     content: "";
@@ -152,6 +164,7 @@ header .welcome a {
     transform: translateY(150px);
     overflow: hidden;
     z-index: -1;
+    filter: drop-shadow(0 0 5px var(--main-text));
 }
 header .welcome a::after {
     content: "";
@@ -161,6 +174,7 @@ header .welcome a::after {
     height: 10px;
     transform: translateX(-50%);
     background-color: var(--main-text);
+    filter: drop-shadow(0 0 5px var(--main-text));
     border-radius: 50%;
     animation: name duration timing-function delay iteration-count direction fill-mode;
     animation-name: anchor;
@@ -198,6 +212,7 @@ header .welcome a::after {
     border: 4px solid var(--main-text);
     border-radius: 10px;
     position: relative;
+    filter: drop-shadow(0 0 5px var(--main-text));
 }
 .about .container .profile .picture {
     position: absolute;
@@ -220,6 +235,7 @@ header .welcome a::after {
     width: 100%;
     height: 100%;
     background-color: #0009;
+    backdrop-filter: blur(5px);
     transition-duration: 1s;
     border-radius: 10px;
     display: flex;
@@ -235,6 +251,7 @@ header .welcome a::after {
 .about .container .profile .picture .layout1 ul li {
     transform: translateY(-15px);
     background-color: white;
+    filter: drop-shadow(0 0 10px white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -262,15 +279,19 @@ header .welcome a::after {
 }
 .about .container .profile .picture .layout1 ul li:nth-child(1) a i {
     color: blue;
+    filter: drop-shadow(0 0 10px blue);
 }
 .about .container .profile .picture .layout1 ul li:nth-child(2) a i {
     color: rgb(239, 36, 69);
+    filter: drop-shadow(0 0 10px rgb(239, 36, 69));
 }
 .about .container .profile .picture .layout1 ul li:nth-child(3) a i {
     color: rgb(0, 170, 255);
+    filter: drop-shadow(0 0 10px rgb(0, 170, 255));
 }
 .about .container .profile .picture .layout1 ul li:nth-child(4) a i {
     color: #333;
+    filter: drop-shadow(0 0 10px #333);
 }
 .about .container .details {
     width: 50%;
@@ -282,6 +303,7 @@ header .welcome a::after {
     font-family: 'Exo 2', sans-serif;
     font-size: 25px;
     color: white;
+    filter: drop-shadow(0 0 10px white);
 }
 .about .container .details p {
     margin-bottom: 20px;
@@ -294,6 +316,7 @@ header .welcome a::after {
     border: 1px dashed #C1C1C1;
     width: 100%;
     margin-bottom: 20px;
+    filter: drop-shadow(0 0 2px white);
 }
 .about .container .details .layout2 {
     display: flex;
@@ -313,7 +336,9 @@ header .welcome a::after {
     float: left;
 }
 .about .container .details .layout2 .col div p:first-child {
+    padding-right: 3px;
     color: white;
+    filter: drop-shadow(0 0 2px white);
     font-family: "Exo 2", sans-serif;
 }
 .about .container .details .layout2 .col div p:last-child {
@@ -333,6 +358,12 @@ header .welcome a::after {
 .about .container .details .btns button:hover {
     background-color: var(--main-text);
     color: white;
+    box-shadow: 0 0 10px 5px var(--main-text);
+}
+.about .container .details .btns button:active {
+    background-color: #bc2140;
+    box-shadow: 0 0 10px 5px #bc2140;
+    border-color: #bc2140;
 }
 
 .services {
@@ -344,8 +375,10 @@ header .welcome a::after {
 .services .container h2 {
     text-align: center;
     color: white;
+    filter: drop-shadow(0 0 5px white);
     font-family: 'Exo 2', sans-serif;
     font-size: 35px;
+    animation: pulse 2s linear 1s infinite normal both;
 }
 .services .container .squares {
     margin-top: 25px;
@@ -374,18 +407,21 @@ header .welcome a::after {
                         0 20px rgba(255, 48, 91, 0.2),
                         0 0 40px 0 rgba(185, 16, 50, 0.1);
     transform: translateY(-20px);
+    filter: drop-shadow(0 0 5px var(--main-text));
 }
 .services .container .squares div i {
     color: var(--main-text);
+    filter: drop-shadow(0 0 5px var(--main-text));
     display: block;
     margin: auto;
     font-size: 26px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 .services .container .squares div p:nth-of-type(1) {
     font-family: 'Exo 2', sans-serif;
     font-weight: bolder;
     margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px white);
 }
 .services .container .squares div p:nth-of-type(2) {
     font-family: 'Roboto', sans-serif;
@@ -410,10 +446,13 @@ header .welcome a::after {
 }
 .portfolio .container h2 {
     color: white;
+    filter: drop-shadow(0 0 5px white);
     padding: 10px;
     padding-bottom: 0;
     font-size: 40px;
     font-family: 'Exo 2', sans-serif;
+    animation: pulse 2s linear 1s infinite normal both;
+
 }
 .portfolio .container .portfolio-pics {
     margin-top: 25px;
@@ -423,6 +462,7 @@ header .welcome a::after {
     justify-content: center;
     align-items: center;
     gap: 30px;
+    filter: drop-shadow(0 0 5px white);
 }
 .portfolio .container .portfolio-pics div::before {
     content: "";
@@ -527,9 +567,12 @@ header .welcome a::after {
 }
 .blog .container .heading h2 {
     color: white;
+    filter: drop-shadow(0 0 5px white);
     text-align: center;
     font-size: 35px;
     font-family: 'Exo 2', sans-serif;
+    animation: pulse 2s linear 1s infinite normal both;
+
 }
 .blog .container .blogs {
     width: 100%;
@@ -547,6 +590,7 @@ header .welcome a::after {
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid var(--main-text);
+    box-shadow: 0 0 20px 5px var(--main-text);
     border-radius: 10px;
     color: white;
     overflow: hidden;
@@ -570,11 +614,13 @@ header .welcome a::after {
     font-family: 'Exo 2', sans-serif;
     font-size: 12px;
     margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px white);
 }
 .blog .container .blogs > div .info h2 {
     font-family: 'Exo 2', sans-serif;
     font-size: 16px;
     margin-bottom: 10px;
+    filter: drop-shadow(0 0 5px white);
 }
 .blog .container .blogs > div .info p {
     margin-bottom: 20px;
@@ -589,6 +635,7 @@ header .welcome a::after {
     color: var(--main-text);
     border: 1px solid var(--main-text);
     border-radius: 10px;
+    filter: drop-shadow(0 0 2px var(--main-text));
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     padding: 8px 10px;
@@ -597,13 +644,16 @@ header .welcome a::after {
 .blog .container .blogs > div .info a:hover {
     background-color: var(--main-text);
     color: white;
+    box-shadow: 0 0 5px 0 var(--main-text);
 }
 .blog .container .blogs > div .info a i {
     transition-duration: 500ms;
+    filter: drop-shadow(0 0 2px var(--main-text));
 }
 .blog .container .blogs > div .info a:hover i {
     margin-left: 5px;
 }
+
 .contactUs {
     height: 90vh;
     background-color: var(--second-bgColor);
@@ -621,9 +671,11 @@ header .welcome a::after {
 }
 .contactUs .container .heading h2 {
     color: white;
+    filter: drop-shadow(0 0 5px white);
     text-align: center;
     font-size: 35px;
     font-family: 'Exo 2', sans-serif;
+    animation: pulse 2s linear 1s infinite normal both;
 }
 .contactUs .container .form {
     width: 60%;
@@ -646,26 +698,31 @@ header .welcome a::after {
     padding: 10px;
     margin-bottom: 15px;
     background-color: transparent;
+    color: white;
     border: 1px solid var(--main-text);
+    box-shadow: 0 0 10px 0 var(--main-text);
     border-radius: 10px;
     padding-left: 10px;
-    color: white;
+    transition-duration: 200ms;
 }
 .contactUs .container .form form input:focus, textarea:focus {
     outline: none;
+    border-color: white;
+    box-shadow: 0 0 10px 0 white;
 }
 .contactUs .container .form form input::placeholder, textarea::placeholder {
     font-size: 12px;
     color: white;
+    filter: drop-shadow(0 0 3px white);
 }
 .contactUs .container .form form textarea {
     height: 150px;
 }
 .contactUs .container .form form button {
     background-color: var(--second-bgColor);
-    color: var(--main-text);
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
+    color: var(--main-text);
     border: 1px solid var(--main-text);
     border-radius: 10px;
     padding: 8px 12px;
@@ -676,6 +733,7 @@ header .welcome a::after {
 .contactUs .container .form form button:hover {
     background-color: var(--main-text);
     color: white;
+    box-shadow: 0 0 10px 0 var(--main-text);
 }
 footer {
     height: 35px;
@@ -683,7 +741,10 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--main-bgColor);
+}
+footer p {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+    animation: change-color 250ms linear 0s infinite alternate both;
 }

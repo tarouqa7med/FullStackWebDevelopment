@@ -11,6 +11,9 @@
 }
 html {
     scroll-behavior: smooth;
+    animation: blur 2s ease 200ms 1 alternate backwards;
+    background-color: #333333;
+    animation-direction: normal;
 }
 .container {
     width: 80%;
