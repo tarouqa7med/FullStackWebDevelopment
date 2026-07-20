@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: "Barlow Condensed", sans-serif;
     color: white;
+    transition-duration: 250ms;
 }
 html {
     scroll-behavior: smooth;
@@ -21,13 +22,16 @@ header nav .container {
     width: 85%;
     margin: auto;
     overflow: auto;
+    filter: drop-shadow(0 0 10px white);
 }
 header nav img {
     width: 160px;
     margin: 10px;
     float: left;
+    animation: pulse 2s linear 0s infinite normal both;
 }
 header nav ul {
+    padding-right: 20px;
     float: right;
     display: block;
     margin-top: 50px;
@@ -47,8 +51,13 @@ header nav ul li a {
     font-weight: 500;
     cursor: pointer;
 }
+header nav ul li a:hover {
+    filter: drop-shadow(0 0 10px cyan);
+    animation: change-color 250ms linear 0s infinite alternate both;
+}
 header .header {
     width: 100%;
+    filter: drop-shadow(0 0 10px white);
 }
 header .header .container {
     margin: auto;
@@ -60,6 +69,7 @@ header .header .container img {
     display: block;
     margin: auto;
     margin-bottom: 20px;
+    animation: pulse 2s linear 1s infinite normal both;
 }
 .header h1 {
     margin-bottom: 20px;
@@ -90,6 +100,7 @@ section#About .container .heading h1 {
     margin-bottom: 20px;
     font-size: 65px;
     font-weight: 600;
+    filter: drop-shadow(0 0 10px white);
 }
 section#About .container .heading h5 {
     text-align: center;
@@ -114,14 +125,21 @@ section#About .container .heading mark {
     padding: 8px;
     border-radius: 5px;
 }
-section#About .container img {
+section#About .container .image {
+    padding: 25px;
     float: right;
     width: 520px;
-    border-radius: 20px;
     margin-top: 100px;
     margin-bottom: 50px;
 }
-
+section#About .container .image  img {
+    border-radius: 20px;
+    filter: drop-shadow(0 0 10px white);
+    width: 100%;
+}
+section#About .container .image  img:hover {
+    filter: drop-shadow(0 0 10px cyan);
+}
 
 section#Menu {
     background-color: #3E3E3E;
@@ -136,27 +154,34 @@ section#Menu .container h1 {
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 30px;
+    filter: drop-shadow(0 0 10px white);
 }
 section#Menu .container .burger {
     overflow: auto;
     margin: auto;
 }
 section#Menu .container .burger .order {
+    padding-block: 25px;
     width: 50%;
     float: left;
     margin: auto;
     margin-bottom: 50px;
+}
+section#Menu .container .burger .order:hover {
+    filter: drop-shadow(0 0 10px cyan);
 }
 section#Menu .container .burger .order img {
     display: block;
     width: 90%;
     margin: auto;
     border-radius: 30px;
+    filter: drop-shadow(0 0 10px white);
 }
 section#Menu .container .burger .order p {
     margin-block: 20px;
     text-align: center;
     font-size: 30px;
+    filter: drop-shadow(0 0 10px white);
 }
 section#Menu .container .burger .order ul {
     padding-left: 40px;
@@ -180,6 +205,7 @@ section.Booknow p {
     font-size: 50px;
     text-align: center;
     margin-bottom: 30px;
+    filter: drop-shadow(0 0 10px white);
 }
 section.Booknow form * {
     display: block;
@@ -189,17 +215,27 @@ section.Booknow form * {
 section.Booknow form label {
     margin-bottom: 10px;
     font-weight: lighter;
+    filter: drop-shadow(0 0 10px white);
 }
 section.Booknow form input {
     padding: 12px;
     border: none;
     border-radius: 5px;
     margin-bottom: 50px;
+    filter: drop-shadow(0 0 5px white);
+}
+section.Booknow form input:focus,
+section.Booknow form textarea:focus {
+    filter: drop-shadow(0 0 10px cyan);
+    outline: none;
 }
 section.Booknow textarea {
     width: 400px;
     height: 150px;
     margin-bottom: 50px;
+    border-radius: 10px;
+    resize: none;
+    filter: drop-shadow(0 0 5px white);
 }
 section.Booknow button {
     background-color: transparent;
@@ -210,6 +246,17 @@ section.Booknow button {
     font-weight: 500;
     letter-spacing: 2px;
     height: 50px;
+    filter: drop-shadow(0 0 10px white);
+    cursor: pointer;
+}
+section.Booknow button:hover {
+    background-color: #73281A;
+}
+section.Booknow button:active {
+    background-color: #5b1e13;
+    filter: drop-shadow(0 0 10px cyan);
+    border: 2px solid cyan;
+    transform: scale(0.8);
 }
 
 footer {
@@ -221,4 +268,8 @@ footer {
     font-weight: lighter;
     letter-spacing: 2px;
     height: 50px;
+}
+footer p {
+    filter: drop-shadow(0 0 10px white);
+    animation: change-color 250ms linear 0s infinite alternate both;
 }
